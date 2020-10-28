@@ -374,4 +374,10 @@ footer{
     margin-top: -20px;
     background-color:#212121;
     color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    color:#ffb200;
 }
