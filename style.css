@@ -1,4 +1,6 @@
 body{
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -7,25 +9,25 @@ body{
     position: fixed;;
     z-index: 9999;
     top: 0;
-    width: 99%;
+    width: 10000px;
+    max-width:100vw;
     max-height: 90px;
-    padding: 10px 20px 0 20px;
+    padding: 10px 90px 0 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
 }
 .navigation nav{
-    width: 30%;
+    width: 44%;
+}
+.wdth{
+    width: 50%;
     margin: 0;
     padding: 0;
 }
-.navigation .wdth{
-    width: 30%;
-    margin: 0;
-    padding: 0;
+.wdth-dspl-centr{
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 .navigation ul{
     width: 100%;
@@ -57,27 +59,21 @@ body{
     color:white;
 }
 
-.nav-menu img{
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    margin-left: 70%;
-}
 .main{
     padding: 0;
-    max-width: 100%;
+    width: 100%;
     margin-top:90px;
 }
 .is-overlay{ 
     display: block;
-    max-width: 100%; 
-    height: 100%; 
+    max-width: 100vw; 
+    height: 1100px; 
 	top: 0; right: 0; bottom: 0; left: 0;
 	overflow: hidden;
 }
 .main-title{
-    width: 100%;
-    height: 130%;
+    width: 98%;
+    height: 1090px;
     text-align: center;
     display: block;
     position: absolute;
@@ -104,11 +100,13 @@ body{
     background-image: url(./images/background.jpg);
     background-repeat: no-repeat;
     background-size:100%;
-    text-align: center;
+    text-align: right;
 }
 .frst-present-wtch h1{
-    padding-top: 20px;
-    font-size: 60px;
+    padding-top: 200px;
+    padding-right: 300px;
+    font-size: 80px;
+    color:#ffb200;
 }
 .frst-present-wtch h2{
     font-size: 30px;
@@ -129,10 +127,11 @@ body{
 
 .carousel-wrapper {
 	width: 100%;
-	position: relative;
+    position: relative;
 	padding-bottom: 30%;
 	overflow: hidden;
 }
+
 .carousel-items {
 	width: 300%;
 	height: 100%;
@@ -199,19 +198,19 @@ body{
 	left: 0;
 }
 #slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
-	background-color: rgba(0, 0, 0, 0.76);;
+	background-color: #ffb200;
 }
 #slide2:checked ~ .carousel-items {
 	left: -100%;
 }
 #slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
-	background-color: rgba(0, 0, 0, 0.76);
+	background-color: #ffb200;
 }
 #slide3:checked ~ .carousel-items {
 	left: -200%;
 }
 #slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
-	background-color: rgba(0, 0, 0, 0.76);;
+	background-color: #ffb200;
 }
 .info-box{
     max-width: 100%;
@@ -260,7 +259,14 @@ body{
     position:absolute;
     left:0;
     width: 100%;
-    top:99%;
+    top:800px;
+    z-index:1;
+}
+.svg-background2{
+    position:absolute;
+    left:0;
+    width: 100%;
+    top:1600px;
     z-index:1;
 }
 .info-card{
@@ -275,9 +281,12 @@ body{
     box-shadow: 0 0 20px 10px  rgba(0, 0, 0, 0.3);
 }
 .h-infb2{
-    height: 700px;
+    min-height: 700px;
 }
-.p-infb2{
+.d-infb2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 90px 10% 90px 10%;
 }
 .dsp-flex1{
@@ -286,7 +295,7 @@ body{
     align-items: center;
 }
 .infcrd-img{
-    width: 400px;
+    width: 100%;
 }
 .t-infB2{
     flex-wrap: wrap;
@@ -334,7 +343,7 @@ body{
     text-align: center;
 }
 .h-infb3{
-    height: 160px;
+    height: 180px;
 }
 .tabl-img-lnk{
     margin-left: 43%;
@@ -362,6 +371,7 @@ body{
 footer{
     width: 100%;
     height: 300px;
+    margin-top: -20px;
     background-color:#212121;
     color:white;
 }
